@@ -1,0 +1,51 @@
+.members {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: calc(100vh);
+}
+.members .member {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.members .member:nth-child(1):hover {
+    background: url(../assets/imgs/KRANOS.png) no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+.members .member:nth-child(2):hover {
+    background-color: var(--cl-card-two);
+}
+.members .member:nth-child(3):hover{
+    background-color: var(--cl-card-three);
+}
+.members .member:nth-child(4):hover{
+    background-color: var(--cl-card-four);
+}
+.members .member:nth-child(5):hover{
+    background-color: var(--cl-card-five);
+}
+.members .member .mb-container {
+    line-height: 2em;
+    padding-left: 40px;
+}
+.members .member .mb-container button {
+    padding: 8px 16px;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2em;
+    background-color: transparent;
+    transition: .5s;
+}
+.members .member .mb-container button:hover {
+    background-color: rgba(30, 11, 11, 0.179);   
+}
+.members .member .mb-container button i {
+    margin-left: 8px;
+}

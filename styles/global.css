@@ -1,0 +1,96 @@
+:root {
+    /* createing color vars */
+    --cl-card-one:#2d4939;
+    --cl-card-two: #808000;
+    --cl-card-three: #6d5f5f;
+    --cl-card-four:  #206475;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hea, .foo {
+    z-index: 999;
+}
+.hea {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.hea .hea-container {
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hea .hea-container .l-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hea .hea-container .l-side img {
+    width: 150px;
+}
+.hea .hea-container .l-side span {
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+.hea .hea-container .r-side button{
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.foo {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+}
+.foo .foo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding-left: 0;
+    padding-left: 35px;
+    padding-right: 40px;
+}
+.foo .foo-container .l-side {
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.foo .foo-container .r-side {
+    padding-left: 20px;
+}
+
+.foo .foo-container .circle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 5px;
+}
+.foo .foo-container .circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
